@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "mspOfferName": {
+      "value": "OpusAccess"
+    },
+    "mspTenantId": {
+      "value": "db33e46e-27a3-4844-9354-c70f339d47d4"
+    },
+    "authorizations": {
+      "value": [
+        {
+          "principalId": "26446fda-2a8f-484e-9075-7c83275b771c",
+          "roleDefinitionId": "/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "principalIdDisplayName": "Opus (Alon)"
+        }
+      ]
+    }
+  }
+}

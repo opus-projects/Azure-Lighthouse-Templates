@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "mspOfferName": {
+      "type": "string"
+    },
+    "mspTenantId": {
+      "type": "string"
+    },
+    "authorizations": {
+      "type": "array"
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.ManagedServices/registrationDefinitions",
+      "apiVersion": "2019-09-01",
+      "name": "[guid(parameters('mspOfferName'), parameters('mspTenantId'))]",
+      "properties": {
+        "registrationDefinitionName": "[parameters('mspOfferName')]",
+        "managedByTenantId": "[parameters('mspTenantId')]",
+        "description": "Delegated access via Azure Lighthouse",
+        "authorizations": "[parameters('authorizations')]"
+      }
+    }
+  ]
+}
