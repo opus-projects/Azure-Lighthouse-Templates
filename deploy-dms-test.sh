@@ -2,7 +2,7 @@
 
 # === CONFIG ===
 RG="412-test-rg"
-LOCATION="israelcentral"
+LOCATION="westeurope"
 DMS_NAME="dms-412-test"
 VNET_NAME="412-test-vnet"
 SUBNET_NAME="subnet-dms"
