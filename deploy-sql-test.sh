@@ -5,7 +5,7 @@ LOCATION="israelcentral"
 RG="412-test-rg"
 SQL_SERVER="412-test-sqlserver"
 SQL_ADMIN="c412il_clockdb_admin"
-SQL_PASSWORD="admin_Orel0"
+SQL_PASSWORD="^Xa8f$1qW4gSd!92zUvF"
 SQL_DB="412-test-db"
 
 # === CREATE RESOURCE GROUP ===
